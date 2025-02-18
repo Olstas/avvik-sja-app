@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avvik & SJA</title>
+    <link rel="manifest" href="manifest.json">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            font-size: 18px;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Registrer Avvik eller SJA</h1>
+        <a class="button" href=https://docs.google.com/forms/d/e/1FAIpQLScIE46pOBz83bhVKpaeW9LifV7H4onfkusds2-sLd-PHLzizA/viewform?usp=sharing target="_blank">Registrer Avvik</a>
+        <a class="button" href=https://docs.google.com/forms/d/e/1FAIpQLSdEqUgTroxXrMRFVwINQwGue33cOeBTBD_C6HB3axo7Zp5MIg/viewform?usp=sharing target="_blank">Registrer SJA</a>
+    </div>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js');
+        }
+    </script>
+</body>
+</html>
